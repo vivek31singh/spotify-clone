@@ -19,7 +19,7 @@ export default function Spotify() {
           "Content-Type": "application/json",
         },
       });
-      console.log({ data }); //this log will show the user data like profile picture and display name
+      // console.log({ data }); //this log will show the user data like profile picture and display name
       
       const userInfo = {
         userId: data.id,
