@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { IoLibrary } from "react-icons/io5";
 import { MdHomeFilled, MdSearch } from "react-icons/md";
-
+import Playlists from "./Playlists";
 export default function Sidebar() {
   return (
     <Container>
@@ -28,6 +28,7 @@ export default function Sidebar() {
           </li>
         </ul>
       </div>
+      <Playlists/>
     </Container>
   );
 }
@@ -63,13 +64,11 @@ const Container = styled.div`
 
       li {
         display: flex;
+        gap: 1rem;
         transition: 0.3s ease-in-out;
         cursor: pointer;
-&:after{
-    display: block;
-}
-        &:hover:after {
-            transform:scaleX(1);
+
+        &:hover {
           color: white;
         }
       }

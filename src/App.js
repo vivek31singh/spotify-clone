@@ -12,7 +12,7 @@ export default function App() {
     // console.log(hash);
     if (hash) {
       const token = hash.substring(1).split("&")[0].split("=")[1];
-      console.log(token);
+      // console.log(token);    //this will show the token in split mode
 
       dispatch({ type: reducerCases.SET_TOKEN, token });
     }
